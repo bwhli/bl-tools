@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "bl-tools"
+version = "0.1.0"
+description = ""
+authors = ["Brian Li <brian@brianli.com>"]
+readme = "README.md"
+packages = [{include = "bl_tools"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+typer = "^0.9.0"
+httpx = "^0.24.1"
+python-dotenv = "^1.0.0"
+pydantic = "^2.2.1"
+boto3 = "^1.28.30"
+rich = "^13.5.2"
+
+[tool.poetry.scripts]
+blt = "bl_tools.main:app"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
