@@ -1,11 +1,6 @@
-from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
-from typing import Optional
 
-import boto3
-import httpx
 import typer
-from pydantic import BaseModel
 from rich import print
 
 from bl_tools import R2_AWS_ACCESS_KEY_ID, R2_AWS_SECRET_ACCESS_KEY, R2_ENDPOINT_URL
